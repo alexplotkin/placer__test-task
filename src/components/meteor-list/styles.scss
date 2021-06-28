@@ -1,0 +1,33 @@
+.meteor-list__wrapper {
+  @media (min-width: 767px) {
+    column-count: 3;
+  }
+}
+
+.meteor-list__not-found-message {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.meteor-list__item__wrapper {
+  @media (min-width: 767px) {
+    break-inside: avoid;
+  }
+  margin: 0 10px 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.meteor-list__item__name {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.meteor-list__item__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 12px;
+}

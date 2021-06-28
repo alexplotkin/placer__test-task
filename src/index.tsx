@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+/* state-manager */
+import { StoresProvider, stores } from './state-manager/stores';
+
+/* components */
+import App from './App';
+
+/* styles */
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <StoresProvider value={stores}>
+      <App />
+    </StoresProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
